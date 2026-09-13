@@ -22,3 +22,23 @@ html,body,#root{height:100%;margin:0}*{box-sizing:border-box}body{font-family:In
   .boardbar{top:6px;left:6px;right:6px}
   .board-search{display:none}
 }
+
+/* Structured canvas toolbar */
+.boardbar{gap:8px}
+.canvas-actions{display:flex;align-items:center;gap:7px;min-width:0;overflow:hidden}
+.tool-group{display:flex;align-items:center;gap:2px;padding:2px;border:1px solid #e2e2dd;border-radius:9px;background:#fafaf8;flex:0 0 auto}
+.tool-group .tool{border:0;background:transparent}
+.tool-group .tool:hover{background:#ededeb}
+.secondary-tools{max-width:430px;overflow:hidden}
+.view-tools{margin-left:auto}
+.more-wrap{flex:0 0 auto}
+.more-menu{max-height:70vh;overflow:auto}
+@media(max-width:1200px){
+  .secondary-tools{max-width:220px}
+  .secondary-tools .tool:nth-child(n+4){display:none}
+}
+@media(max-width:900px){
+  .secondary-tools{display:none}
+  .view-tools{margin-left:0}
+  .save-status{display:none}
+}
