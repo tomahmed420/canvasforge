@@ -1,0 +1,2 @@
+import {Tldraw} from 'tldraw';
+export function Canvas(){return <div className="app-shell"><header className="topbar"><div className="brand">CanvasForge</div><div className="status">Private workspace · local persistence</div></header><main className="canvas-shell"><Tldraw persistenceKey="canvasforge-main"/></main></div>}
