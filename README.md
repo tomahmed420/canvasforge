@@ -2,18 +2,53 @@
 
 A private, single-owner infinite-canvas workspace inspired by modern visual thinking tools.
 
-## Phase 1
+## Milestone B — Productivity
 
-- Unlimited private boards (no artificial board cap for the single-owner workspace)
-- Infinite canvas
-- Sticky notes
-- Text
-- Shapes
-- Move / resize / rotate
-- Group / lock / duplicate / delete
+### Workspace
+- Unlimited private boards
+- Favorites, search, sorting, trash/restore
+- Board duplication
+- Reusable templates
+- JSON import/export
+- Local-only persistence
+- Workspace reset
+
+### Infinite canvas
+- Sticky notes, text, shapes, arrows
+- Frames
+- Mind-map starter
+- Flowchart starter
+- Table starter
+- Timeline starter
+- Kanban starter
+- Zoom in/out and Fit-to-content
+- Layers panel
+- Minimap helper
+- Presentation mode based on frames
+
+### Editing
+- Select all
+- Duplicate / paste-offset
+- Group / ungroup
+- Lock / unlock
+- Bring to front / send to back
+- Align left/center/right/top/middle/bottom
+- Distribute horizontally/vertically
+- Delete
 - Undo / redo
-- Autosave architecture
-- Board dashboard architecture
+- Keyboard shortcuts
+
+### Export
+- PNG
+- SVG
+- Print-to-PDF workflow
+
+### Reliability
+- Autosave status
+- Save timer cleanup
+- Import normalization/validation
+- Schema version metadata
+- Responsive workspace UI
 
 ## Development
 
