@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Tldraw, Editor, createShapeId } from 'tldraw'
 import 'tldraw/tldraw.css'
 
@@ -7,7 +7,7 @@ type Board={id:string;name:string;updatedAt:number;favorite?:boolean;trashedAt?:
 export const CANVAS_CORE_VERSION='1.0.0'
 export const getCanvasStorageKey=(boardId:string)=>`canvasforge-canvas-${boardId}`
 export const clearCanvasBackup=(boardId:string)=>{try{localStorage.removeItem(getCanvasStorageKey(boardId));return true}catch{return false}}
-\nexport const BOARD_KEY='canvasforge-boards'
+export const BOARD_KEY='canvasforge-boards'
 export const TEMPLATE_KEY='canvasforge-templates'
 export const loadBoards=():Board[]=>{try{return JSON.parse(localStorage.getItem(BOARD_KEY)||'[]')}catch{return[]}}
 export const loadTemplates=():any[]=>{try{return JSON.parse(localStorage.getItem(TEMPLATE_KEY)||'[]')}catch{return[]}}
