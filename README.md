@@ -4,7 +4,7 @@ A private, single-owner infinite-canvas workspace inspired by modern visual thin
 
 ## Phase 1
 
-- Unlimited private boards
+- Unlimited private boards (no artificial board cap for the single-owner workspace)
 - Infinite canvas
 - Sticky notes
 - Text
