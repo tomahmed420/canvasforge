@@ -42,3 +42,28 @@ html,body,#root{height:100%;margin:0}*{box-sizing:border-box}body{font-family:In
   .view-tools{margin-left:0}
   .save-status{display:none}
 }
+
+/* Miro-style board chrome */
+.boardbar{height:48px;top:8px;left:10px;right:10px;z-index:100;gap:8px;padding:0 8px}
+.boardbar strong{font-weight:600}
+.board-search{display:flex;align-items:center;gap:6px;margin-left:auto;width:220px;height:32px;padding:0 9px;border:1px solid #e5e5e0;border-radius:8px;background:#fff}
+.board-search input{border:0;outline:0;min-width:0;width:100%;font-size:12px;background:transparent}
+.board-search span{font-size:10px;color:#888}
+.more-wrap{position:relative}
+.more-menu{position:absolute;right:0;top:42px;width:230px;padding:6px;border:1px solid #ddd;border-radius:10px;background:#fff;box-shadow:0 12px 35px #0002;z-index:200}
+.more-menu button{display:block;width:100%;border:0;background:transparent;text-align:left;padding:8px 9px;border-radius:6px;font-size:12px}
+.more-menu button:hover{background:#f1f1ee}
+.canvas-nav{position:absolute;right:18px;bottom:18px;z-index:80;display:flex;align-items:center;gap:2px;padding:4px;border:1px solid #deded8;border-radius:10px;background:#fff;box-shadow:0 5px 18px #0002}
+.canvas-nav button{min-width:32px;height:30px;border:0;background:transparent;border-radius:7px;font-size:13px;display:flex;align-items:center;justify-content:center}
+.canvas-nav button:hover{background:#f0f0ed}
+.canvas-nav span{min-width:48px;text-align:center;font-size:11px;color:#666}
+.present-launch{position:absolute;right:18px;bottom:66px;z-index:80;border:1px solid #deded8;background:#fff;border-radius:8px;padding:7px 10px;font-size:12px;box-shadow:0 4px 14px #0001}
+@media(max-width:800px){
+ .board-search{width:150px}
+ .canvas-nav{right:10px;bottom:10px}
+}
+@media(max-width:600px){
+ .boardbar{left:6px;right:6px}
+ .save-status{display:none}
+ .board-search{display:none}
+}
